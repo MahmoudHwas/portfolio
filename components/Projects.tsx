@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { ProjectData } from "./ProjectData";
+import { ProjectData } from "../ProjectData";
 
 // تعريف Interface لكل عنصر في ProjectData
 interface Project {
