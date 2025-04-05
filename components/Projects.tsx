@@ -87,11 +87,11 @@ const Projects = () => {
         {data.map((item: Project) => (
           <div key={item.id} className="flex flex-col items-center">
             {/* الصورة */}
-            <div className='cursor-pointer pt-[0px] relative w-[100%] h-[200px] md:h-[300px]'>
-              <a href={item.livedemo ? item.livedemo : item.github} target='_blank' rel="noopener noreferrer">
-                <Image src={item.image} alt={item.name} layout='fill' className='object-contain' />
-              </a>
-            </div>
+            <div className='cursor-pointer pt-[0px] relative w-[100%] h-[200px] md:h-[300px] overflow-hidden'>
+  <a href={item.livedemo ? item.livedemo : item.github} target='_blank' rel="noopener noreferrer">
+    <Image src={item.image} alt={item.name} layout='fill' className='object-contain' />
+  </a>
+</div>
             {/* الزراير */}
             <div className="flex gap-4 mt-4">
               {item.livedemo && (
