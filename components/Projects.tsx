@@ -36,29 +36,29 @@ const Projects = () => {
       <h1 className='heading'>
         Pro <span className='text-yellow-300'>Jects</span>
       </h1>
-      <div className="flex justify-center items-center w-[100%] h-32 text-white">
-        <ul className='flex gap-3 justify-center items-center'>
-          <li
-            className={`border-[2px] border-[#55e6a5] p-2 cursor-pointer transition ease-in-out ${
-              activeFilter === 'All' ? 'bg-[#55e6a5]' : 'hover:bg-[#55e6a5]'
-            }`}
-            onClick={() => GalleryFilter('All')}
-          >
-            All
-          </li>
-          {collection.map((item: string) => (
-            <li
-              key={item}
-              onClick={() => GalleryFilter(item)}
-              className={`border-[2px] border-[#55e6a5] p-2 cursor-pointer transition ease-in-out ${
-                activeFilter === item ? 'bg-[#55e6a5]' : 'hover:bg-[#55e6a5]'
-              }`}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div className="flex justify-center items-center w-full h-32 text-white">
+  <ul className="flex gap-3 justify-center items-center flex-wrap max-w-full p-2">
+    <li
+      className={`border-[2px] border-[#55e6a5] p-2 cursor-pointer transition ease-in-out ${
+        activeFilter === 'All' ? 'bg-[#55e6a5]' : 'hover:bg-[#55e6a5]'
+      }`}
+      onClick={() => GalleryFilter('All')}
+    >
+      All
+    </li>
+    {collection.map((item: string) => (
+      <li
+        key={item}
+        onClick={() => GalleryFilter(item)}
+        className={`border-[2px] border-[#55e6a5] p-2 cursor-pointer transition ease-in-out ${
+          activeFilter === item ? 'bg-[#55e6a5]' : 'hover:bg-[#55e6a5]'
+        }`}
+      >
+        {item}
+      </li>
+    ))}
+  </ul>
+</div>
       <div
         className='w-[80%] relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] max-h-[960px] overflow-y-auto'
         style={{

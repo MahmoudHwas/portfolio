@@ -7,7 +7,7 @@ interface Prpos {
 
 const Nav = ({openNav} : Prpos) => {
   return (
-    <div className=" w-[100%] fixed z-[1000] top-0 h-[12vh] bg-[#141c27] shadow-md">
+    <div className=" w-[100%] fixed z-[1000] top-0 h-[10vh] bg-[#141c27] shadow-md ">
           <div className="flex items-center justify-between h-[100%] w-[80%] mx-auto">
             <h1 className="flex-[0.6] cursour-pointer text-[25px] text-white font-bold">WEB 
               <span className="text-yellow-300">DEV</span>
