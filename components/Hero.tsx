@@ -12,7 +12,7 @@ const Hero = () => {
     <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[3rem] min-h-0 py-6 flex flex-col justify-center">
       <div className="flex flex-col justify-center">
         <h1 className="text-[35px] md:text-[50px] text-white font-bold">
-          Hi, I'M <span className="text-yellow-300">Mahmoud</span>
+          Hi IM <span className="text-yellow-300">Mahmoud</span>
         </h1>
         <TextEffect />
         <p className="mt-[1.5rem] text-[18px] sm:text-[20px] text-[#ffffff92]">
